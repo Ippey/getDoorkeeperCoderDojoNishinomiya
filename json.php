@@ -5,7 +5,7 @@ $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl);
 curl_close($curl);
-$events = [];
+$events = array();
 if ($response) {
 	$json = json_decode($response, true);
 	foreach ($json as $row) {
