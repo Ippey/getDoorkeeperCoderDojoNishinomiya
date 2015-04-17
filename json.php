@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://api.doorkeeper.jp/groups/coderdojo-nishinomiya/events";
+$url = "http://api.doorkeeper.jp/groups/coderdojo-nishinomiya/events?locale=ja";
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl);
